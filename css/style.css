@@ -1,0 +1,156 @@
+html { font-size: 62.5%; } 
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Kumbh Sans", Arial, Helvetica, sans-serif;
+    background-color: rgb(56, 157, 175);
+}
+
+.comp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50em;
+    width: 100%;
+    height: auto;
+    margin: 10em auto;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: -2;
+    box-shadow: 0 0 50px -10px #000;
+}
+
+#pfpBg {
+    position: absolute;
+    border-radius: 10px 10px 0 0;
+    max-width: 50em;
+    width: 100%;
+}
+
+#profilepic{
+    max-width: 15em;
+    width: 100%;
+    margin: 12em auto 2em auto;
+    z-index: 10;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.comp h1{
+    color: hsl(229, 23%, 23%);
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: .2em;
+}
+
+.comp span {
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+}
+
+.comp h2 {
+    font-size: 1.6rem;
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+}
+
+.stats {
+    display: flex;
+    flex-flow: row;
+    max-width: 65%;
+    width: 100%;
+    justify-content: space-between;
+    margin: 10em 0 5em 0; 
+    list-style: none;
+}
+
+.stats li{
+    font-size: 2.6rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.first::after {
+    content: '\A Followers';
+    white-space: pre;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: hsl(227, 10%, 46%);
+}
+
+.second::after {
+    content: '\A Likes';
+    white-space: pre;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: hsl(227, 10%, 46%);
+}
+
+.third::after {
+    content: '\A Photos';
+    white-space: pre;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: hsl(227, 10%, 46%);
+}
+
+@media only screen and (max-width:625px) {
+    .comp{
+        max-width: 35em;
+        width: 100%;
+        height: auto;
+    }
+
+    #pfpBg {
+        position: absolute;
+        border-radius: 10px 10px 0 0;
+        max-width: 35em;
+        width: 100%;
+    }
+    
+    #profilepic{
+        max-width: 10em;
+        width: 100%;
+        margin: 9em auto 2em auto;
+    }
+
+    .stats {
+        width: 75%;
+        justify-content: space-between;
+        margin: 10em 0 5em 0; 
+        list-style: none;
+    }
+
+    .comp h1{
+        font-size: 2.6rem;
+        margin-bottom: .2em;
+    }
+    
+    .comp h2 {
+        font-size: 1.6rem;
+    }
+
+    .stats li{
+        font-size: 2.2rem;
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    .first::after {
+        font-size: 1.5rem;
+    }
+    
+    .second::after {
+        font-size: 1.5rem;
+    }
+    
+    .third::after {
+        font-size: 1.5rem;
+    }
+}
