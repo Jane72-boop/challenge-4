@@ -9,6 +9,21 @@ html { font-size: 62.5%; }
 body {
     font-family: "Kumbh Sans", Arial, Helvetica, sans-serif;
     background-color: rgb(56, 157, 175);
+    overflow: hidden;
+}
+
+.bgImg {
+    position: absolute
+}
+
+.top {
+    top: -60em;
+    margin-left: -30%;
+}
+
+.bot {
+    margin-left: 50%;
+    bottom: -50em;
 }
 
 .comp{
