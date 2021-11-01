@@ -78,11 +78,13 @@ body {
 .stats {
     display: flex;
     flex-flow: row;
-    max-width: 65%;
+    max-width: 100%;
     width: 100%;
     justify-content: space-between;
-    margin: 10em 0 5em 0; 
+    margin: 10em auto 4em auto; 
+    padding: 2em 5em 0 5em;
     list-style: none;
+    border-top: 1px solid #000;
 }
 
 .stats li{
