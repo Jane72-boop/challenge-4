@@ -13,15 +13,18 @@ body {
 }
 
 .bgImg {
-    position: absolute
+    z-index: -10;
+    width: 100%;
 }
 
 .top {
+    position: absolute; 
     top: -60em;
     margin-left: -30%;
 }
 
 .bot {
+    position: absolute; 
     margin-left: 50%;
     bottom: -50em;
 }
@@ -84,7 +87,7 @@ body {
     margin: 10em auto 4em auto; 
     padding: 2em 5em 0 5em;
     list-style: none;
-    border-top: 1px solid #000;
+    border-top: 1px solid rgba(0,0,0, .2);
 }
 
 .stats li{
@@ -138,7 +141,7 @@ body {
     }
 
     .stats {
-        width: 75%;
+        width: 100%;
         justify-content: space-between;
         margin: 10em 0 5em 0; 
         list-style: none;
